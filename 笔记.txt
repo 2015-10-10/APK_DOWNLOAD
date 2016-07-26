@@ -1,12 +1,20 @@
-���ܣ�
-�Ѹ�ʽ��������д��ĳ���ַ�����������
-ͷ�ļ���
+sprintf
+功能：
+把格式化的数据写入某个字符串缓冲区。
+头文件：
 stdio.h
-ԭ�ͣ�
-int sprintf( char *buffer, const char *format, [ argument] �� );
-�����б���
-buffer��char��ָ�룬ָ��Ҫд����ַ����Ļ�������
-format����ʽ���ַ�����
-[argument]...����ѡ�������������κ����͵����ݡ�
-����ֵ��
-����д��buffer ���ַ����������򷵻�-1��sprintf ���ر�д��buffer ���ֽ����������ַ���\0���������ڡ����������Hello����д��ռ��㹻���buffer�󣬺���sprintf ����5��
+原型：
+int sprintf( char *buffer, const char *format, [ argument] … );
+参数列表：
+buffer：char型指针，指向将要写入的字符串的缓冲区。
+format：格式化字符串。
+[argument]...：可选参数，可以是任何类型的数据。
+返回值：
+返回写入buffer 的字符数，出错则返回-1。sprintf 返回被写入buffer 的字节数，结束字符‘\0’不计入内。
+即，如果“Hello”被写入空间足够大的buffer后，函数sprintf 返回5。
+c_str
+String类中的一个函数，返回当前字符串的首字符地址。
+system
+头文件：stdio.h
+功能：发出一个DOS命令
+用法：int system(char *command);
