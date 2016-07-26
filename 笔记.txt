@@ -1,9 +1,0 @@
-sprintf:
-功能：
-把格式化的数据写入某个字符串中  
-原型：
-int sprintf(char *buffer,const char *format,[argument]...... )
-参数列表：
-buffer：char型指针，指向将要写入的字符串的缓冲区。
-format：格式化字符串。
-[argument]...：可选参数，可以是任何类型的数据。
